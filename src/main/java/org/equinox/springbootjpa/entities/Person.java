@@ -21,6 +21,11 @@ public class Person {
     @Column(name = "programming_language")
     private String programmingLanguage;
 
+    public Person(String name, String lastName) {
+        this.name = name;
+        this.lastName = lastName;
+    }
+
     @Override
     public String toString() {
         return "{" +
